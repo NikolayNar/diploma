@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hlegals</title>
+    <link rel="stylesheet" href="css/style-services.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="firstSection">
+            <header class="header">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                    <div class="header__logo__pages">
+                        <img src="../img/logo_slash.png" alt="slash">
+                        <span>послуги</span>
+                        <img src="../img/logo_p.png" alt="p">
+                    </div>
+                </div>
+                <div class="header__content">
+                    <div class="header__content__contacts">
+                        <div class="header__content__contacts__lang">
+                            <button>УК</button>
+                            <button>РУ</button>
+                            <button>EN</button>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__address">
+                            <p>Одеса, Адміральський пр., 3</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__phone">
+                            <p>	+38 (050) 390 15 91</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__facebook">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="FaceBook"></a>
+                        </div>
+                    </div>
+                    <nav class="header__content__navigation">
+                        <li><a href="./about_us.html">о нас</a></li>
+                        <li><a href="./services.html">послуги</a></li>
+                        <li><a href="./team.html">команда</a></li>
+                        <li><a href="./publications.html">публіуації</a></li>
+                        <li><a href="./contacts.html">контакти</a></li>
+                    </nav>
+                </div>
+            </header>
+            @@include('./#components/_services.html')
+        </section>
+        <section class="secondSection">
+            @@include('./#components/_successful_cases.html')
+        </section>
+        <section class="thirdSection">
+            @@include('./#components/_clients.html')
+        </section>
+        @@include('./#components/_footer.html')
+    </div>
+</body>
+</html>

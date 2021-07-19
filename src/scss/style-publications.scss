@@ -1,0 +1,221 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');
+@import 'reset.scss';
+@import 'vars.scss';
+
+.wrapper {
+    font-family: $font-main;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .header {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 54px;
+        
+        &__logo {
+                display: flex;
+                align-items: flex-start;
+        
+                &__pages {
+                    display: block;
+        
+                    span {
+                        font-size: 38px;
+                        color: #323264;
+                        vertical-align: top;
+                    }
+                }
+        }
+        
+        &__content {
+                &__contacts div {
+                    margin-left: 10px;
+                }
+        
+                &__contacts {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-bottom: 16px;
+        
+                    &__lang button {
+                        border: none; 
+                        outline: none;
+                        background-color: transparent;
+                        color: $gray;
+                        font-family: $font-main;
+                        font-size: 12px;
+                        padding: 5px 6px;
+                        cursor: pointer;
+                    }
+
+                    &__lang button:active {
+                    background-color: #F0145A;
+                    border-radius: 8px;
+                    color: white;
+                    }
+        
+                    &__dot {
+                        width: 6px;
+                        height: 6px;
+                        background: #E6E6F0;
+                        border-radius: 50%
+                    }
+        
+                    &__address {
+                        font-size: 16px;
+                        color: $gray;
+                    }
+        
+                    &__phone {
+                        font-weight: bold;
+                        cursor: pointer;
+                        color: $gray;
+                    }
+        
+                    &__facebook {
+                        cursor: pointer;
+                    }
+                }
+        
+                &__navigation {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+        
+                &__navigation li {
+                    margin-left: 16px;
+                    a {
+                        text-decoration: none;
+                        color: $blue;
+                    }    
+                }
+        }
+    }
+
+    .firstSection {
+        background-color: $light-gray;
+
+        .tumbler {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        
+            *{
+                user-select: none;
+                -webkit-tap-highlight-color:transparent;
+            }
+    
+            *:focus {
+                outline: none;
+            }
+    
+            .toggle-button-cover {
+                display: flex;
+                position: relative;
+                width: 200px;
+                height: 25px;
+                box-sizing: border-box;
+    
+            }
+    
+            .button-cover {
+                width: 260px;
+                height: 40px;
+                background-color: #E6E6F0;
+                border-radius: 10px;
+            }
+    
+            .button-cover, .knobs, .layer {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+    
+            .button {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+    
+            .checkbox {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 3;
+            }
+    
+            .knobs {
+                z-index: 2;
+            }
+                
+            .layer {
+                width: 100%;
+                background-color: #E6E6F0;
+                transition: 0.3s ease all;
+                z-index: 1;
+                border-radius: 10px;
+            }
+    
+            #button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                font-size: 18px;
+                text-align: center;
+                line-height: 1;
+                padding: 9px 0;
+                border-radius: 10px;
+                transition: 0.3s ease all;
+            }
+    
+            #button-10 .knobs:before {
+                content: '';
+                left: 2px;
+                top: 2px;
+                bottom: 2px;
+                background-color: white;
+            }
+    
+            #button-10 .knobs:after {
+                content: 'компанія';
+                right: 0px;
+                color: #323264;
+            }
+    
+            #button-10 .knobs span {
+                display: inline-block;
+                color: #323264;
+                z-index: 1;
+            }
+    
+            #button-10 .checkbox:checked + .knobs span {
+                color: #323264;
+            }
+    
+            #button-10 .checkbox:checked + .knobs:before {
+                left: 50%;
+                background-color: white;
+            }
+    
+            #button-10 .checkbox:checked + .knobs:after {
+                color: #323264;
+            }
+    
+            #button-10 .checkbox:checked ~ .layer {
+                background-color: #E6E6F0;
+            }
+        }
+        @import 'publication';
+    }
+    @import 'footer';
+}

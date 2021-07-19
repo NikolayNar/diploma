@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hlegals</title>
+    <link rel="stylesheet" href="css/style-contacts.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./img/Logo_dark.png" alt="logo"></a>
+                    <div class="header__logo__pages">
+                        <img src="../img/logo_slash.png" alt="slash">
+                        <span>контакти</span>
+                        <img src="../img/logo_p.png" alt="p">
+                    </div>
+                </div>
+                <div class="header__content">
+                    <div class="header__content__contacts">
+                        <div class="header__content__contacts__lang">
+                            <button>УК</button>
+                            <button>РУ</button>
+                            <button>EN</button>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__address">
+                            <p>Одеса, Адміральський пр., 3</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__phone">
+                            <p>	+38 (050) 390 15 91</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__facebook">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_gray.png" alt="FaceBook"></a>
+                        </div>
+                    </div>
+                    <nav class="header__content__navigation">
+                        <li><a href="./about_us.html">о нас</a></li>
+                        <li><a href="./services.html">послуги</a></li>
+                        <li><a href="./team.html">команда</a></li>
+                        <li><a href="./publications.html">публіуації</a></li>
+                        <li><a href="./contacts.html">контакти</a></li>
+                    </nav>
+                </div>
+        </header>
+        <section class="firstSection">
+            <div class="contacts">
+                <p>Одеса,<br>Адміральський пр., 3</p>
+                <p class="contacts__phone"><a href="tel:+38 (050) 390 15 91">+38 (050) 390 15 91</a></p>
+                <p class="contacts__mail"><a href="mailto:pcontact@hlegals.net">contact@hlegals.net</a></p>
+                <div class="contacts__fb">
+                    <img src="./img/facebook_blue.png" alt="facebook" height="38">
+                    <p>Наша сторінка<br>в фейсбуці</p>
+                </div>
+            </div>
+            <div class="forma">
+                @@include('./#components/_request_form.html')
+            </div>
+        </section>
+        <section class="secondSection">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1499.2193743694356!2d30.729286944499528!3d46.437193537193636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633bcf38613dd%3A0x4cb8c5528a146950!2z0K7RgNC40LTQuNGH0LXRgdC60LDRjyDQutC-0LzQv9Cw0L3QuNGPINCf0YDQvtC70LjQs9Cw0LvRgQ!5e0!3m2!1sen!2sua!4v1626546764576!5m2!1sen!2sua" width="1440px" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        @@include('./#components/_footer.html')
+    </div>
+</body>
+</html>

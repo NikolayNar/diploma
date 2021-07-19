@@ -1,0 +1,254 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');
+@import 'reset.scss';
+@import 'vars.scss';
+
+.wrapper {
+    font-family: $font-main;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .firstSection {
+        .header {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 54px;
+            
+            &__logo {
+                    display: flex;
+                    align-items: flex-start;
+            
+                    &__pages {
+                        display: block;
+            
+                        span {
+                            font-size: 38px;
+                            color: #323264;
+                            vertical-align: top;
+                        }
+                    }
+            }
+            
+            &__content {
+                    &__contacts div {
+                        margin-left: 10px;
+                    }
+            
+                    &__contacts {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin-bottom: 16px;
+            
+                        &__lang button {
+                            border: none; 
+                            outline: none;
+                            background-color: transparent;
+                            color: $gray;
+                            font-family: $font-main;
+                            font-size: 12px;
+                            padding: 5px 6px;
+                            cursor: pointer;
+                        }
+
+                        &__lang button:active {
+                        background-color: #F0145A;
+                        border-radius: 8px;
+                        color: white;
+                        }
+            
+                        &__dot {
+                            width: 6px;
+                            height: 6px;
+                            background: #E6E6F0;
+                            border-radius: 50%
+                        }
+            
+                        &__address {
+                            font-size: 16px;
+                            color: $gray;
+                        }
+            
+                        &__phone {
+                            font-weight: bold;
+                            cursor: pointer;
+                            color: $gray;
+                        }
+            
+                        &__facebook {
+                            cursor: pointer;
+                        }
+                    }
+            
+                    &__navigation {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+            
+                    &__navigation li {
+                        margin-left: 16px;
+                        a {
+                            text-decoration: none;
+                            color: $blue;
+                        }    
+                    }
+            }
+        }
+
+        .advantages {
+            display: flex;
+            margin: 82px 172px;
+            
+            &__text {
+                padding-right: 42px;
+                flex-basis: 1000px;
+
+                h2 {
+                    @extend %h2;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 21px;
+                    line-height: 30px;
+                }
+            }
+
+            &__numbers {
+                border-left: 4px solid #E6E6F0;
+                padding-left: 20px;
+
+                div {
+                    margin-bottom: 40px;
+                    span {
+                        @extend %h2;
+                        font-size: 36px;
+                        margin-bottom: 10px;
+                    }
+    
+                    p {
+                        margin-top: 10px;
+                        color: #323264;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .secondSection {
+        .team {
+            background-image: url(../img/au_team.png);
+            height: 438px;
+            position: relative;
+
+            p {
+                font-size: 96px;
+                letter-spacing: 63px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: white;
+                opacity: 0.8;
+                text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+                text-align: center;
+                position: absolute;
+                top: calc(50% - 48px);
+                left: calc(50% - 480px);
+                
+            }
+        }
+
+        .info {
+            display: flex;
+            margin: 80px 172px;
+
+            .info__block {
+                flex-basis: 1500px;
+                margin-right: 40px;
+                p {
+                    font-size: 21px;
+                    line-height: 30px;
+                    color: black;
+                }
+            }
+
+            h2 {
+                @extend %h2;
+            }
+        }
+    }
+
+    .thirdSection {
+        background-color: $light-gray;
+        .achievement {
+            padding: 28px 0 30px 0;
+            p {
+                font-size: 14px;
+                color: #323264;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            
+            &__wrapper {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 30px;
+
+                &__item1 {
+                    background: url(../img/au_achiv.item1.png) center no-repeat;
+                    width: 300px;
+                    height: 110px;
+                    border-radius: 12px;
+                    background-color: white;
+                }
+
+                &__item2 {
+                    background: url(../img/au_achiv.item2.png) center no-repeat;
+                    width: 300px;
+                    height: 110px;
+                    border-radius: 12px;
+                    background-color: white;
+                }
+
+                &__item3 {
+                    background: url(../img/au_achiv.item3.png) center no-repeat;
+                    width: 300px;
+                    height: 110px;
+                    border-radius: 12px;
+                    background-color: white;
+                }
+
+                &__item4 {
+                    background: url(../img/au_achiv.item4.png) center no-repeat;
+                    width: 300px;
+                    height: 110px;
+                    border-radius: 12px;
+                    background-color: white;
+                }
+            }
+
+            .paginator {
+                text-align: center;
+                margin-top: 20px;
+                
+                button {
+                    border-radius: 50%;
+                    height: 16px;
+                    width: 16px;
+                    margin-right: 14px;
+                    border: 0;
+                    background-color: $blue;
+                    cursor: pointer;
+                }
+    
+                button:not(:first-child) {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+
+    @import 'footer';
+}

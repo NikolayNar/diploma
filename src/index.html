@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hlegals</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="firstSection">
+            <header class="header">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="header__content">
+                    <div class="header__content__contacts">
+                        <div class="header__content__contacts__lang">
+                            <button>УК</button>
+                            <button>РУ</button>
+                            <button>EN</button>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__address">
+                            <p>Одеса, Адміральський пр., 3</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__phone">
+                            <p>	+38 (050) 390 15 91</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__facebook">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="FaceBook"></a>
+                        </div>
+                    </div>
+                    <nav class="header__content__navigation">
+                        <li><a href="./about_us.html">о нас</a></li>
+                        <li><a href="./services.html">послуги</a></li>
+                        <li><a href="./team.html">команда</a></li>
+                        <li><a href="./publications.html">публіуації</a></li>
+                        <li><a href="./contacts.html">контакти</a></li>
+                    </nav>
+                </div>
+            </header>
+            <h1>системний адміністратор<br>правових рішень</h1>
+            <button class="firstSection__scroll-down">
+                <a href="#scroll">
+                    <img src="./img/scroll_down.png" alt="Scroll-Down">
+                </a>
+            </button>
+        </section>
+        <section class="secondSection" id="scroll">
+            <div class="secondSection__quality">
+                <div class="secondSection__quality__qualities">
+                    <li><a>Послідовні</a></li>
+                    <li><a>Клієнтоорієнтовані</a></li>
+                    <li><a>Інноваційні</a></li>
+                    <li><a>Бізнес-орієнтовані<br>юристи</a></li>
+                </div>
+                <div class="secondSection__quality__line"></div>
+                <div class="secondSection__quality__description">
+                        <div>
+                            <h3>Перевертаємо уявлення про юридичні послуги</h3>
+                            <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+                        </div>
+                </div>                
+            </div>
+            <p class="secondSection__uslugi">послуги &gt;</p>
+            @@include('./#components/_services.html')
+        </section>
+        <section class="thirdSection">
+            <div class="thirdSection__slider">
+                <img src="./img/team/teammate1.png" alt="team_person">
+                <div class="thirdSection__slider__description">
+                    <p class="team">команда &gt;</p>
+                    <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                    <p class="name">Олександр Олександровський</p>
+                    <p class="title">Керуючий партнер</p>
+                </div>
+            </div>
+            <div class="thirdSection__paginator">
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div>
+                @@include('./#components/_successful_cases.html')
+            </div>
+        </section>
+        <section class="fourthSection">
+            @@include('./#components/_clients.html')
+            <div class="heading">
+                <p class="title-head">Публікації &gt;</p>
+                <h2>Нам є що розповісти</h2>
+            </div>
+            @@include('./#components/_publication.html')
+        </section>
+        @@include('./#components/_footer.html')
+    </div>
+</body>
+</html>

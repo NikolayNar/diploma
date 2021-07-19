@@ -1,0 +1,66 @@
+.form {
+    background-color: $light-gray;
+    border-radius: 12px;
+    padding: 20px;
+
+    form {
+
+        h2 {
+            @extend %h2;
+            font-size: 32px;
+        }
+    
+        input {
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        input::placeholder {
+            font-family: $font-main;
+            color: $gray;
+            font-size: 18px;
+        }
+
+        textarea {
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            resize: none;
+            height: 180px;
+            margin: 20px 0;
+        }
+
+        textarea::placeholder {
+            font-family: $font-main;
+            color: $gray;
+            font-size: 18px;
+        }
+
+        label {
+            color: $gray;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: $blue;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border-radius: 12px;
+            color: white;
+            font-size: 14px;
+            width: 250px;
+            height: 50px;
+            margin-top: 20px;
+            border: none;
+            text-align: center;
+            margin-left: calc(50% - 125px);
+        }
+    }
+}

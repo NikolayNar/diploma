@@ -1,0 +1,153 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');
+@import 'reset.scss';
+@import 'vars.scss';
+
+.wrapper {
+    font-family: $font-main;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .header {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 54px;
+        
+        &__logo {
+                display: flex;
+                align-items: flex-start;
+        
+                &__pages {
+                    display: block;
+        
+                    span {
+                        font-size: 38px;
+                        color: #323264;
+                        vertical-align: top;
+                    }
+                }
+        }
+        
+        &__content {
+                &__contacts div {
+                    margin-left: 10px;
+                }
+        
+                &__contacts {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-bottom: 16px;
+        
+                    &__lang button {
+                        border: none; 
+                        outline: none;
+                        background-color: transparent;
+                        color: $gray;
+                        font-family: $font-main;
+                        font-size: 12px;
+                        padding: 5px 6px;
+                        cursor: pointer;
+                    }
+
+                    &__lang button:active {
+                    background-color: #F0145A;
+                    border-radius: 8px;
+                    color: white;
+                    }
+        
+                    &__dot {
+                        width: 6px;
+                        height: 6px;
+                        background: #E6E6F0;
+                        border-radius: 50%
+                    }
+        
+                    &__address {
+                        font-size: 16px;
+                        color: $gray;
+                    }
+        
+                    &__phone {
+                        font-weight: bold;
+                        cursor: pointer;
+                        color: $gray;
+                    }
+        
+                    &__facebook {
+                        cursor: pointer;
+                    }
+                }
+        
+                &__navigation {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+        
+                &__navigation li {
+                    margin-left: 16px;
+                    a {
+                        text-decoration: none;
+                        color: $blue;
+                    }    
+                }
+        }
+    }
+
+    .firstSection {
+        display: flex;
+        margin: 82px 172px;
+
+        .info {
+            margin-left: 40px;
+            h2 {
+                @extend %h2;
+            }
+
+            &__contacts {
+                display: flex;
+                align-items: baseline;
+
+                p {
+                    color: $gray;
+                    font-size: 16px;
+                }
+
+                a {
+                    color: $blue;
+                    text-decoration: none;
+                }
+
+                .dot {
+                    width: 6px;
+                    height: 6px;
+                    background: #e6e6f0;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
+            }
+
+            &__description {
+                margin-top: 20px;
+                border-top: 4px solid #E6E6F0;
+                padding-top: 40px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                p:nth-child(2n) {
+                    color: #323264;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    @import 'footer';
+}

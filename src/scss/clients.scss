@@ -1,0 +1,73 @@
+div {
+
+    h4 {
+        color: #323264;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    .clients {
+        display: flex;
+        flex-wrap: wrap;
+    
+        .img {
+            width: 360px;
+            height: 120px;
+            flex-grow: 1;
+            flex-basis: 360px;
+    
+        }
+    
+        .h {
+            background: url(../img/clients_logo/Hillel-Logo-OneLine-White-Uk.png) center no-repeat, #1C4280;
+        }
+    
+        .wb {
+            background: url(../img/clients_logo/wanna-biz.png) center no-repeat, #143646;
+        }
+    
+        .t {
+            background: url(../img/clients_logo/tapgerine.png) center no-repeat, #F48B30;
+        }
+    
+        .dl {
+            background: url(../img/clients_logo/3d-look.png) center no-repeat, #9E4DC3;
+        }
+    
+        .o {
+            background: url(../img/clients_logo/oranger.png) center no-repeat, #FD9339;
+        }
+    
+        .a {
+            background: url(../img/clients_logo/adtelligent.png) center no-repeat, #E2E2E4;
+        }
+    
+        .c {
+            background: url(../img/clients_logo/clickky.png) center no-repeat, #C71C36; 
+        }
+        
+        .el {
+            background: url(../img/clients_logo/ecolease.png) center no-repeat, #DCF3F9;
+        }
+    
+        .it {
+            background: url(../img/clients_logo/infa-tek.png) center no-repeat, #EAEAEA;
+        }
+    
+        .sp {
+            background: url(../img/clients_logo/sity-park.png) center no-repeat, #282240;
+        }
+    
+        .aps {
+            background: url(../img/clients_logo/art-print-studio.png) center no-repeat, #1D4568;
+        }
+    
+        .uc {
+            background: url(../img/clients_logo/ultimate-card.png) center no-repeat, black;
+        }
+    }
+}

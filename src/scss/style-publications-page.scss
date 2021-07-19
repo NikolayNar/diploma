@@ -1,0 +1,218 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');
+@import 'reset.scss';
+@import 'vars.scss';
+
+.wrapper {
+    font-family: $font-main;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .header {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 54px;
+        
+        &__logo {
+                display: flex;
+                align-items: flex-start;
+        
+                &__pages {
+                    display: block;
+        
+                    span {
+                        font-size: 38px;
+                        color: #323264;
+                        vertical-align: top;
+                    }
+                }
+        }
+        
+        &__content {
+                &__contacts div {
+                    margin-left: 10px;
+                }
+        
+                &__contacts {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-bottom: 16px;
+        
+                    &__lang button {
+                        border: none; 
+                        outline: none;
+                        background-color: transparent;
+                        color: $gray;
+                        font-family: $font-main;
+                        font-size: 12px;
+                        padding: 5px 6px;
+                        cursor: pointer;
+                    }
+
+                    &__lang button:active {
+                    background-color: #F0145A;
+                    border-radius: 8px;
+                    color: white;
+                    }
+        
+                    &__dot {
+                        width: 6px;
+                        height: 6px;
+                        background: #E6E6F0;
+                        border-radius: 50%
+                    }
+        
+                    &__address {
+                        font-size: 16px;
+                        color: $gray;
+                    }
+        
+                    &__phone {
+                        font-weight: bold;
+                        cursor: pointer;
+                        color: $gray;
+                    }
+        
+                    &__facebook {
+                        cursor: pointer;
+                    }
+                }
+        
+                &__navigation {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+        
+                &__navigation li {
+                    margin-left: 16px;
+                    a {
+                        text-decoration: none;
+                        color: $blue;
+                    }    
+                }
+        }
+    }
+
+    .firstSection {
+        margin: 0 266px;
+        
+        h3 {
+            font-size: 32px;
+            color: #323264;
+            margin: 40px 0 10px 0;
+            padding: 0 20px;
+        }
+
+        .date {
+            color: $gray;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 0 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            padding: 0 20px;
+        }
+
+        h2 {
+            @extend %h2;
+            margin: 40px 0;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: #46466E;
+            font-weight: bold;
+            padding: 0 20px;
+            margin: 40px 0 20px 0;
+        }
+
+        ol {
+            margin: 0 40px;
+            padding-bottom: 25px;
+        }
+
+        li {
+            list-style: decimal;
+            line-height: 26px;
+            margin-top: 18px;
+        }
+
+        li::marker {
+            list-style: decimal;
+            color: #F0145A;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+
+        .decription {
+            font-size: 16px;
+            color: $gray;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .line {
+            background-color: #EDEDF7;
+            height: 4px;
+            width: 100%;
+            margin: 40px 0;
+            padding: 0 20px;
+        }
+        
+        .line2 {
+            background-color: #EDEDF7;
+            height: 4px;
+            width: 100%;
+            margin: 40px 0 20px 0;
+            padding: 0 20px;
+        }
+
+        .buttons {
+            button {
+                background-color: $light-gray;
+                border-radius: 12px;
+                border: none;
+                height: 42px;
+                width: 42px;
+                margin-right: 10px;
+
+                img {
+                    margin: auto;
+                }
+            }
+        } 
+    }
+
+    .heading {
+        margin: 40px 0 0 80px;
+        background-color: $light-gray;
+        
+        .title-head {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #24a3ff;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            }
+        
+        h2 {
+            @extend %h2;
+        }
+    }
+
+    @import 'publication.scss';
+
+    @import 'footer';
+}

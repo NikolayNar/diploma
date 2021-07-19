@@ -1,0 +1,103 @@
+.services {
+    max-width: 1440px;
+    margin: 0 60px 80px 60px;
+    border-radius: 0px 0px 12px 12px;
+    z-index: 3;
+
+    h2 {
+        @extend %h2;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 92px;
+            height: 92px;
+            background-color: white;
+            border-radius: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            margin: 58px 60px 0 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 400px;
+
+            &__shoping {
+                @extend %services-img;
+                background: center url(../img/icon_shopping.png) no-repeat, white;
+            }
+
+            &__case {
+                @extend %services-img;
+                background: center url(../img/icon_case.png) no-repeat, white;
+            }
+
+            &__crowdfunding {
+                @extend %services-img;
+                background: center url(../img/icon_crowdfunding.png) no-repeat, white;
+            }
+
+            &__collaborative {
+                @extend %services-img;
+                background: center url(../img/icon_collaborative.png) no-repeat, white;
+            }
+            
+            &__safety {
+                @extend %services-img;
+                background: center url(../img/icon_safety.png) no-repeat, white;
+            }
+            
+            &__lawyer {
+                @extend %services-img;
+                background: center url(../img/iconr_lawyer.png) no-repeat, white;
+            }
+        }
+
+        &__item a {
+            text-decoration: none;
+
+            p {
+                font-size: 24px;
+                color: $blue;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__item > p {
+            font-size: 18px;
+        } 
+
+
+        &__item:nth-child(3n+0) {
+            margin-right: 0px;
+        }
+
+    }
+}
+
+.shadows {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+
+    &_one {
+        z-index: 2;
+        height: 10px;
+        margin: 0 20px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+    }
+    
+    &_two {
+        z-index: 1;
+        height: 10px;
+        margin: 0 40px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+    }
+}

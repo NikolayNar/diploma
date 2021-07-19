@@ -1,0 +1,269 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');
+@import 'reset.scss';
+@import 'vars.scss';
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.wrapper {
+    font-family: $font-main;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .firstSection {
+        height: 100vh;
+        background:
+            50% 100% / auto no-repeat url(../img/shade.png), 
+            50% 100% / auto no-repeat url(../img/main-symbol.png),
+            50% 50% / auto auto no-repeat url(../img/main-symbols.png),
+            linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+        
+            .header {
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                padding: 54px;
+            
+                &__logo {
+                    display: flex;
+                    align-items: flex-start;
+                }
+            
+                &__content {
+                    &__contacts div {
+                        margin-left: 10px;
+                    }
+            
+                    &__contacts {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin-bottom: 16px;
+            
+                        &__lang button {
+                            border: none; 
+                            outline: none;
+                            background-color: transparent;
+                            color: white;
+                            font-family: $font-main;
+                            font-size: 12px;
+                            padding: 5px 6px;
+                            cursor: pointer;
+                        }
+                        &__lang button:active {
+                        background-color: #F0145A;
+                        border-radius: 8px;
+                        }
+            
+                        &__dot {
+                            width: 6px;
+                            height: 6px;
+                            background: white;
+                            border-radius: 50%
+                        }
+            
+                        &__address {
+                            font-size: 16px;
+                        }
+            
+                        &__phone {
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+            
+                        &__facebook {
+                            cursor: pointer;
+                        }
+                    }
+            
+                    &__navigation {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+            
+                    &__navigation li {
+                        margin-left: 16px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+        h1 {
+            font-size: 38px;
+            color: white;
+            line-height: 45px;
+            text-align: center;
+            position: absolute;
+            left: calc(50% - 400px/2);
+            top: calc(50% - 90px/2);
+        }
+
+        &__scroll-down {
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 42px/2);
+            background: transparent;
+            border: none;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .secondSection {
+        scroll-behavior: smooth;
+        background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+        &__quality {
+            display: flex;
+            margin: 0 142px 80px 172px;
+            align-items: center;
+
+            &__qualities {
+                font-weight: bold;
+                font-size: 42px;
+                color: $gray;
+                text-align: right;
+                cursor: pointer;
+
+                li {
+                    margin-bottom: 20px;
+                }
+
+                a:hover {
+                    background: -webkit-linear-gradient(0deg, rgba(239,128,128,1) 0%, rgba(240,20,90,1) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+
+            &__line {
+                height: 270px;
+                width: 9px;
+                background: linear-gradient(to top, #E6E6F0 0%, #E6E6F0 80%,#000000 50%,#F0145A 50%, #F0145A 100%);
+                margin: 0 40px 0 40px;
+            }
+
+            &__description {
+                div {
+                    margin-bottom: 20px;
+                    h3 {
+                        font-size: 32px;
+                        color: white;
+                        margin-bottom: 20px;
+                    }
+                    
+                    p {
+                        font-size: 21px;
+                        line-height: 30px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &__uslugi {
+            margin-left: 60px;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 50%;
+        }
+
+        @import '../scss/services';
+    }
+
+    .thirdSection {
+        margin: 40px 60px 0 60px;
+
+        &__slider {
+            display: flex;
+            background-color: $light-gray;
+            border-radius: 12px;          
+
+            &__description {
+                margin: 40px;
+
+                .team {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $blue;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    margin-bottom: 2px
+                }
+
+                h2 {
+                    @extend %h2;
+                    margin-bottom: 20px;
+                }
+
+                .name {
+                    font-size: 18px;
+                    color: $gray;
+                    margin-bottom: 4px;
+                }
+                
+                .title {
+                    font-size: 16px;
+                    color: $gray;
+                }
+            }
+        }
+
+        &__paginator {
+            text-align: center;
+            margin-top: 20px;
+
+            button {
+                border-radius: 50%;
+                height: 16px;
+                width: 16px;
+                margin-right: 14px;
+                border: 0;
+                background-color: $blue;
+                cursor: pointer;
+            }
+
+            button:not(:first-child) {
+                opacity: 0.2;
+            }
+        }
+
+        @import 'successful_cases.scss';
+    }
+
+    .fourthSection {
+        background-color: $light-gray;
+        
+        @import 'clients.scss';
+        
+        .heading {
+            margin: 40px 0 0 80px;
+            background-color: $light-gray;
+            
+            .title-head {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #24a3ff;
+                letter-spacing: 1px;
+                font-weight: 700;
+                margin-bottom: 2px;
+                }
+            
+            h2 {
+                @extend %h2;
+            }
+        }
+
+        @import 'publication.scss';
+    }
+
+    @import 'footer';
+}

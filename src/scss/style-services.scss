@@ -1,0 +1,112 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');
+@import 'reset.scss';
+@import 'vars.scss';
+
+.wrapper {
+    font-family: $font-main;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .firstSection {
+        background:
+            linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+        
+        .header {
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                padding: 54px;
+            
+                &__logo {
+                    display: flex;
+                    align-items: flex-start;
+            
+                    &__pages {
+                        display: block;
+            
+                        span {
+                            font-size: 38px;
+                            color: white;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            
+                &__content {
+                    &__contacts div {
+                        margin-left: 10px;
+                    }
+            
+                    &__contacts {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin-bottom: 16px;
+            
+                        &__lang button {
+                            border: none; 
+                            outline: none;
+                            background-color: transparent;
+                            color: white;
+                            font-family: $font-main;
+                            font-size: 12px;
+                            padding: 5px 6px;
+                            cursor: pointer;
+                        }
+                        &__lang button:active {
+                        background-color: #F0145A;
+                        border-radius: 8px;
+                        }
+            
+                        &__dot {
+                            width: 6px;
+                            height: 6px;
+                            background: white;
+                            border-radius: 50%
+                        }
+            
+                        &__address {
+                            font-size: 16px;
+                        }
+            
+                        &__phone {
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+            
+                        &__facebook {
+                            cursor: pointer;
+                        }
+                    }
+            
+                    &__navigation {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+            
+                    &__navigation li {
+                        margin-left: 16px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }    
+                    }
+                }
+        }
+
+        @import '../scss/services';
+    }
+
+    .secondSection {
+        margin: 40px 60px 0 60px;
+
+        @import 'successful_cases.scss';
+    }
+
+    .thirdSection {
+        @import 'clients.scss';
+        @import 'publication.scss';
+    }
+
+    @import 'footer';
+}

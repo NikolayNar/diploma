@@ -1,0 +1,106 @@
+.publication {
+    padding: 40px 60px 0 60px;
+    background-color: $light-gray;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+
+    .publications__wrapper {
+        display: flex;
+        align-items: flex-start;
+
+        .firstColumn, .secondColumn, .thirdColumn {
+            flex-grow: 1;
+            flex-basis: 414px;
+        }
+
+        .publication__block {
+            background-color: white;
+            border-radius: 8px;
+            margin: 20px;
+
+            &__img {
+                height: 218px;
+                margin-bottom: 20px;
+                border-radius: 8px 8px 0 0;
+            }
+
+            &__description {
+                padding: 20px;
+
+                &__title {
+                    color: $blue;
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+    
+                &__date {
+                    color: $gray;
+                    margin-bottom: 20px;
+                }
+    
+                &__line {
+                    border: 4px solid #E6E6F0;
+                    margin-bottom: 20px;
+                }
+    
+                &__des {
+                    color: black;
+                }
+            }
+
+            .empty {
+                display: none;
+            }
+
+            .ea {
+                background: url(../img/publication/public_1.png) center no-repeat;
+            }
+
+            .gdpr {
+                background: url(../img/publication/public_2.png) center no-repeat;
+            }
+
+            .people {
+                background: url(../img/publication/public_3.png) center no-repeat;
+            }
+
+            .uk {
+                background: url(../img/publication/public_4.png) center no-repeat;
+            }
+
+            .guitar {
+                background: url(../img/publication/public_5.png) center no-repeat;
+            }
+
+        }
+    }
+
+    .shade {
+        background-image: url(../img/publication/publication_shade.png);
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .btn-pub {
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 125px);
+        height: 50px;
+        width: 250px;
+        margin-bottom: 40px;
+        background-color: $blue;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border: none;
+        border-radius: 12px;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+    }
+}

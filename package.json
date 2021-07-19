@@ -1,0 +1,32 @@
+{
+  "name": "diploma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolayNar/diploma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolayNar/diploma/issues"
+  },
+  "homepage": "https://github.com/NikolayNar/diploma#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  }
+}

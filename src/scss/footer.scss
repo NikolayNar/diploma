@@ -1,0 +1,63 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 60px 40px 60px;
+    font-family: $font-main;
+
+    &__left {
+
+        &__firstRow {
+            display: flex;
+            margin-bottom: 22px;
+            align-items: baseline;
+
+            .address {
+                color: #323264;
+                font-size: 16px;
+            }
+
+            .link {
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+
+        &__secondRow {
+            display: flex;
+            align-items: center;
+
+            .phone {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                color: #46466E;
+            }
+
+            .mail {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                color: $blue;
+            }
+        }
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+        background: $gray;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+
+    &__right {
+        p {
+            font-size: 16px;
+            color: $gray;
+        }
+    }
+}

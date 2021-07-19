@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hlegals</title>
+    <link rel="stylesheet" href="css/style-publications.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./img/Logo_dark.png" alt="logo"></a>
+                    <div class="header__logo__pages">
+                        <img src="../img/logo_slash.png" alt="slash">
+                        <span>публікації</span>
+                        <img src="../img/logo_p.png" alt="p">
+                    </div>
+                </div>
+                <div class="header__content">
+                    <div class="header__content__contacts">
+                        <div class="header__content__contacts__lang">
+                            <button>УК</button>
+                            <button>РУ</button>
+                            <button>EN</button>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__address">
+                            <p>Одеса, Адміральський пр., 3</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__phone">
+                            <p>	+38 (050) 390 15 91</p>
+                        </div>
+                        <div class="header__content__contacts__dot"></div>
+                        <div class="header__content__contacts__facebook">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_gray.png" alt="FaceBook"></a>
+                        </div>
+                    </div>
+                    <nav class="header__content__navigation">
+                        <li><a href="./about_us.html">о нас</a></li>
+                        <li><a href="./services.html">послуги</a></li>
+                        <li><a href="./team.html">команда</a></li>
+                        <li><a href="./publications.html">публіуації</a></li>
+                        <li><a href="./contacts.html">контакти</a></li>
+                    </nav>
+                </div>
+        </header>
+        <section class="firstSection">
+            <div class="tumbler">
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                      <div class="button b2" id="button-10">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs">
+                            <span>новини</span>
+                        </div>
+                        <div class="layer"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            @@include('./#components/_publication.html')
+        </section>
+        @@include('./#components/_footer.html')
+    </div>
+</body>
+</html>
